@@ -3,9 +3,7 @@ import {useState} from "react"
 const AddTransaction = () => {
     const [text, setText] = useState("")
     const [amount, setAmount] = useState(0)
-    const changeIt = () => {
-        setText("Changed!!")
-    }
+    
   return (
     <div>
       <h3>Add new transaction</h3>
