@@ -7,7 +7,7 @@ const IncomeExpense = () => {
   // get a list of amount > 0, sum it up and make it 2 decimal places
   const income = arrAmount.filter((val) => val > 0).reduce((a, b) => (a += b), 0).toFixed(2)
   // gets a list of amounts less than 0, sum the list up and make it 2 decimals
-  const expenses = arrAmount.filter((val) => val < 0).reduce((a, b) => (a += b), 0).toFixed(2)
+  const expenses = arrAmount.filter((val) => val < 0).reduce((a, b) => (a += b), 0).toFixed(2) * -1
 
 
   return (
